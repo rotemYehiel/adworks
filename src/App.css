@@ -1,38 +1,87 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+    margin: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* cards container */
+
+.job-list-cmp {
+    display: flex;
+    flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filter {
+    align-self: center;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+
+/*  */
+
+.job-card {
+    margin: 1rem;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    border-radius: 0.25rem;
+}
+
+.job-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+.job-preview-cmp {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.job-preview-img {
+    width: 100%;
+}
+
+.job-website {
+    text-decoration: none;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 1000px) {
+    .job-card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .users-list {
+        width: 100%;
+    }
+    .job-card {
+        width: 80%;
+    }
 }
