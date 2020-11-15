@@ -2,20 +2,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(47, 50, 48);
+    color: white;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(58, 247, 143);
+    font-weight: bold;
 }
 
 input {
     margin: 2rem;
+    padding: 0.5rem;
 }
 
 .clean-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.main-header {
+    font-size: 3rem;
+    color: rgb(58, 247, 143);
 }
 
 
@@ -47,12 +61,14 @@ input {
     margin-bottom: 50px;
     transition: 0.3s;
     border-radius: 0.25rem;
+    background-color: rgb(74, 78, 76);
 }
 
 .job-card:hover {
     cursor: pointer;
     transform: scale(1.05);
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgb(58, 247, 143);
 }
 
 .job-preview-cmp {

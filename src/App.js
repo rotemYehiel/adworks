@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Router history={history}>
-        <header>Jobs</header>
+        <header className="main-header">Get A Job!</header>
         <main>
           <Switch>
             <Route path="/" exact component={JobList} />
