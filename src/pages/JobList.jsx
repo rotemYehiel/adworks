@@ -17,7 +17,6 @@ class JobList extends PureComponent {
         this.props.loadJobs(this.state.filterBy);
     }
     onFilter = (filterBy) => {
-        console.log(filterBy)
         this.setState((prevState) => {
             return {
                 filterBy: {

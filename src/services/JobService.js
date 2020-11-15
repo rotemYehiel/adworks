@@ -15,7 +15,6 @@ const dataParams = {
 
 
 async function loadJobs(filterBy) {
-    console.log("serviceL", filterBy)
     return await axios.post(`${baseUrl}`, dataParams).then(res => {
         let jobs = res.data;
         jobs.forEach(job => {
@@ -45,6 +44,4 @@ function _makeId(length = 10) {
 
 export default {
     loadJobs
-
-
 }
